@@ -16,7 +16,7 @@ services:
       - ${scanDirectory}:/data
       - ${data}/protected_media:/protected_media
     ports:
-      - 3000:80
+      - ${httpPort}:80
     depends_on:
       - backend
       - frontend
